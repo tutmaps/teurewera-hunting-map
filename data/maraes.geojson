@@ -1,0 +1,670 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 243,
+        "tribal": "Waikaremoana Marae",
+        "lat": -38.951333,
+        "long": 177.036928,
+        "image_id": 186,
+        "NAME": "Te Putere Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/te-putere-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.036928,
+          -38.951333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 122,
+        "tribal": "Waikaremoana Marae",
+        "lat": -38.819866,
+        "long": 177.14383,
+        "image_id": 185,
+        "NAME": "Te Kuha Tarewa Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/te-kuha-tarewa-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.14383,
+          -38.819866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 64,
+        "tribal": "Waikaremoana Marae",
+        "lat": -38.816226,
+        "long": 177.141305,
+        "image_id": 187,
+        "NAME": "Waimako Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/waimako-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.141305,
+          -38.816226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 103,
+        "tribal": "Ruatahuna Marae",
+        "lat": -38.637791,
+        "long": 176.885578,
+        "image_id": 195,
+        "NAME": "Papueru Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/papueru-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.885578,
+          -38.637791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 104,
+        "tribal": "Ruatahuna Marae",
+        "lat": -38.63588,
+        "long": 176.93185,
+        "image_id": 205,
+        "NAME": "Te Umuroa Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/te-umuroa-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.93185,
+          -38.63588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 61,
+        "tribal": "Ruatahuna Marae",
+        "lat": -38.63289,
+        "long": 176.9333,
+        "image_id": 207,
+        "NAME": "Oputao Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/oputao-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.9333,
+          -38.63289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 105,
+        "tribal": "Ruatahuna Marae",
+        "lat": -38.619788,
+        "long": 176.989571,
+        "image_id": 220,
+        "NAME": "Te Waiiti Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/te-waiiti-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.989571,
+          -38.619788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 107,
+        "tribal": "Ruatahuna Marae",
+        "lat": -38.616133,
+        "long": 176.945046,
+        "image_id": 207,
+        "NAME": "Kakanui (Tipapa) Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/kakanui-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.945046,
+          -38.616133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 108,
+        "tribal": "Ruatahuna Marae",
+        "lat": -38.614884,
+        "long": 176.965594,
+        "image_id": 233,
+        "NAME": "Uwhiarae Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/uwhiarae-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.965594,
+          -38.614884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 106,
+        "tribal": "Ruatahuna Marae",
+        "lat": -38.614848,
+        "long": 176.965578,
+        "image_id": 209,
+        "NAME": "Tatahoata Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/tatahoata-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.965578,
+          -38.614848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 111,
+        "tribal": "Maungapohatu Marae",
+        "lat": -38.601649,
+        "long": 177.084062,
+        "image_id": 234,
+        "NAME": "Te Mapou Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/te-mapou-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.084062,
+          -38.601649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 102,
+        "tribal": "Ruatahuna Marae",
+        "lat": -38.593571,
+        "long": 176.966742,
+        "image_id": 204,
+        "NAME": "Mataatua Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/mataatua-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.966742,
+          -38.593571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 246,
+        "tribal": "Waikaremoana Marae",
+        "lat": -38.582308,
+        "long": 177.791355,
+        "image_id": 196,
+        "NAME": "Te Whanau a Eria",
+        "URL": "http://www.ngaituhoe.iwi.nz/te-whanau-a-eria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.791355,
+          -38.582308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 133,
+        "tribal": "Waimana Marae",
+        "lat": -38.299496,
+        "long": 177.111365,
+        "image_id": 91,
+        "NAME": "Whakarae Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/whakarae-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.111365,
+          -38.299496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 123,
+        "tribal": "Waimana Marae",
+        "lat": -38.253954,
+        "long": 177.110334,
+        "image_id": 83,
+        "NAME": "Matahi Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/matahi-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.110334,
+          -38.253954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 130,
+        "tribal": "Waimana Marae",
+        "lat": -38.249425,
+        "long": 177.109546,
+        "image_id": 90,
+        "NAME": "Tuapo Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/tuapo-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.109546,
+          -38.249425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 120,
+        "tribal": "Waiohau Marae",
+        "lat": -38.225741,
+        "long": 176.842491,
+        "image_id": 188,
+        "NAME": "Te Marae o Waiohau",
+        "URL": "http://www.ngaituhoe.iwi.nz/waiohau_marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.842491,
+          -38.225741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 134,
+        "tribal": "Waimana Marae",
+        "lat": -38.219666,
+        "long": 177.10364,
+        "image_id": 84,
+        "NAME": "Omuriwaka Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/omuriwaka-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.10364,
+          -38.219666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 124,
+        "tribal": "Waimana Marae",
+        "lat": -38.19074,
+        "long": 177.105306,
+        "image_id": 85,
+        "NAME": "Piripari Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/piripari-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.105306,
+          -38.19074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 119,
+        "tribal": "Ruatoki Marae",
+        "lat": -38.18018,
+        "long": 177.001181,
+        "image_id": 76,
+        "NAME": "Waikirikiri Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/waikirikiri-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.001181,
+          -38.18018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 127,
+        "tribal": "Waimana Marae",
+        "lat": -38.178944,
+        "long": 177.107484,
+        "image_id": 212,
+        "NAME": "Tanatana Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/tanatana-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.107484,
+          -38.178944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 125,
+        "tribal": "Waimana Marae",
+        "lat": -38.17886,
+        "long": 177.108086,
+        "image_id": 214,
+        "NAME": "Rahiri Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/rahiri-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.108086,
+          -38.17886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 128,
+        "tribal": "Waimana Marae",
+        "lat": -38.171661,
+        "long": 177.088301,
+        "image_id": 89,
+        "NAME": "Tauanui Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/tauanui-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.088301,
+          -38.171661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 129,
+        "tribal": "Waimana Marae",
+        "lat": -38.171653,
+        "long": 177.088268,
+        "image_id": 86,
+        "NAME": "Pouahinau Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/pouahinau-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.088268,
+          -38.171653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 131,
+        "tribal": "Waimana Marae",
+        "lat": -38.168502,
+        "long": 177.110625,
+        "image_id": 88,
+        "NAME": "Tataiahape Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/tataiahape-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.110625,
+          -38.168502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 115,
+        "tribal": "Ruatoki Marae",
+        "lat": -38.163074,
+        "long": 177.002274,
+        "image_id": 75,
+        "NAME": "Tauarau Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/tauarau-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.002274,
+          -38.163074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 62,
+        "tribal": "Ruatoki Marae",
+        "lat": -38.161961,
+        "long": 176.983253,
+        "image_id": 79,
+        "NAME": "Ngahina Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/ngahina-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.983253,
+          -38.161961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 126,
+        "tribal": "Waimana Marae",
+        "lat": -38.158642,
+        "long": 177.0627,
+        "image_id": 87,
+        "NAME": "Raroa Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/raroa-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.0627,
+          -38.158642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 118,
+        "tribal": "Ruatoki Marae",
+        "lat": -38.157912,
+        "long": 177.003068,
+        "image_id": 74,
+        "NAME": "Te Totara Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/te-totara-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.003068,
+          -38.157912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 114,
+        "tribal": "Ruatoki Marae",
+        "lat": -38.155583,
+        "long": 177.006823,
+        "image_id": 189,
+        "NAME": "Papakainga Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/papakainga-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.006823,
+          -38.155583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 113,
+        "tribal": "Ruatoki Marae",
+        "lat": -38.153052,
+        "long": 176.986546,
+        "image_id": 78,
+        "NAME": "Pane te Ure Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/paneteure-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.986546,
+          -38.153052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 413,
+        "tribal": "Ruatoki Marae",
+        "lat": -38.149391,
+        "long": 177.007188,
+        "image_id": 72,
+        "NAME": "Otunuku Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/otunuku-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.007188,
+          -38.149391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 117,
+        "tribal": "Ruatoki Marae",
+        "lat": -38.139772,
+        "long": 177.00472,
+        "image_id": 71,
+        "NAME": "Te Rewarewa Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/te-rewarewa-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.00472,
+          -38.139772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 121,
+        "tribal": "Ruatoki Marae",
+        "lat": -38.138708,
+        "long": 176.938654,
+        "image_id": 228,
+        "NAME": "Owhakatoro Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/owhakatoro-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.938654,
+          -38.138708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "item_id": 63,
+        "tribal": "Ruatoki Marae",
+        "lat": -38.138079,
+        "long": 176.996919,
+        "image_id": 183,
+        "NAME": "Ohotu Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/ohotu-marae"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.996919,
+          -38.138079
+        ]
+      }
+    }
+  ]
+}
