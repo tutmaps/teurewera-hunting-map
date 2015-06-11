@@ -237,8 +237,8 @@
         "lat": -38.582308,
         "long": 177.791355,
         "image_id": 196,
-        "NAME": "Te Whanau a Eria",
-        "URL": "http://www.ngaituhoe.iwi.nz/te-whanau-a-eria"
+        "NAME": "Ngātapa Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/ngatapa-marae"
       },
       "geometry": {
         "type": "Point",
@@ -256,8 +256,8 @@
         "lat": -38.299496,
         "long": 177.111365,
         "image_id": 91,
-        "NAME": "Whakarae Marae",
-        "URL": "http://www.ngaituhoe.iwi.nz/whakarae-marae"
+        "NAME": "Te Kaawa (Whakarae) Marae",
+        "URL": "http://www.ngaituhoe.iwi.nz/tekaawa-marae"
       },
       "geometry": {
         "type": "Point",
