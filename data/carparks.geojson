@@ -1,1 +1,13 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"NAME":"Waiatiu Falls carpark"},"geometry":{"type":"Point","coordinates":[176.698906,-38.675502]}},{"type":"Feature","properties":{"NAME":"Arohaki Lagoon carpark"},"geometry":{"type":"Point","coordinates":[176.684763,-38.680237]}},{"type":"Feature","properties":{"NAME":"Matakuhia carpark"},"geometry":{"type":"Point","coordinates":[176.604969,-38.850003]}},{"type":"Feature","properties":{"NAME":"Horomanga Access carpark"},"geometry":{"type":"Point","coordinates":[176.823156,-38.40967]}},{"type":"Feature","properties":{"NAME":"Okui carpark"},"geometry":{"type":"Point","coordinates":[176.778352,-38.557248]}},{"type":"Feature","properties":{"NAME":"Te Pona a Pita carpark"},"geometry":{"type":"Point","coordinates":[177.122426,-38.313556]}},{"type":"Feature","properties":{"NAME":"Pukahunui carpark"},"geometry":{"type":"Point","coordinates":[176.655753,-38.865195]}},{"type":"Feature","properties":{"NAME":"Aniwaniwa carpark"},"geometry":{"type":"Point","coordinates":[177.162331,-38.745224]}},{"type":"Feature","properties":{"NAME":"Waikareiti carpark"},"geometry":{"type":"Point","coordinates":[177.1629,-38.743159]}},{"type":"Feature","properties":{"NAME":"Whatapo Bay carpark"},"geometry":{"type":"Point","coordinates":[177.134302,-38.771673]}},{"type":"Feature","properties":{"NAME":"Onepoto carpark"},"geometry":{"type":"Point","coordinates":[177.120439,-38.80003]}},{"type":"Feature","properties":{"NAME":"Hopuruahine carpark"},"geometry":{"type":"Point","coordinates":[177.056083,-38.721224]}},{"type":"Feature","properties":{"NAME":"Te Urewera Visitor Centre carpark"},"geometry":{"type":"Point","coordinates":[176.718754,-38.472639]}}]}
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "NAME": "Te Pona A Pita Carpark" }, "geometry": { "type": "Point", "coordinates": [ 177.12173699, -38.31375989 ] } },
+{ "type": "Feature", "properties": { "NAME": "Aniwaniwa Carpark" }, "geometry": { "type": "Point", "coordinates": [ 177.16265555, -38.74478735 ] } },
+{ "type": "Feature", "properties": { "NAME": "Waikareiti Carpark" }, "geometry": { "type": "Point", "coordinates": [ 177.1628292, -38.74310234 ] } },
+{ "type": "Feature", "properties": { "NAME": "Whatapo Bay Carpark" }, "geometry": { "type": "Point", "coordinates": [ 177.13429602, -38.77162414 ] } },
+{ "type": "Feature", "properties": { "NAME": "Onepoto Carpark" }, "geometry": { "type": "Point", "coordinates": [ 177.12332283, -38.79847638 ] } },
+{ "type": "Feature", "properties": { "NAME": "Hopuruahine Carpark" }, "geometry": { "type": "Point", "coordinates": [ 177.06155247, -38.70981568 ] } }
+]
+}

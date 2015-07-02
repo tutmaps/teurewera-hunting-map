@@ -22,7 +22,7 @@ $("#about-btn").click(function() {
 });
 
 $("#full-extent-btn").click(function() {
-  map.fitBounds(huntingareas.getBounds());
+  map.fitBounds(bounds);
   $(".navbar-collapse.in").collapse("hide");
   return false;
 });
@@ -140,17 +140,20 @@ var mapboxSatellite = L.tileLayer('https://a.tiles.mapbox.com/v4/maptec.l622jkj0
 var topo50 = L.tileLayer('http://tiles-a.data-cdn.linz.govt.nz/services;key=6cd48aeb0e094593b002f67ef2d58ff7/tiles/v4/layer=2343/EPSG:3857/{z}/{x}/{y}.png', {
     maxZoom: 19,
     minZoom: 12.1,
-    attribution: '<a href="http://www.linz.govt.nz" target="_blank"></a>'
+    subdomains:'abcd',
+    attribution: '<a href="http://data.linz.govt.nz">Sourced from LINZ. CC-BY 3.0</a>'
 });
 var topo250 = L.tileLayer('http://tiles-a.data-cdn.linz.govt.nz/services;key=6cd48aeb0e094593b002f67ef2d58ff7/tiles/v4/layer=2324/EPSG:3857/{z}/{x}/{y}.png', {
     maxZoom: 12.0,
     minZoom: 9,
-    attribution: '<a href="http://www.linz.govt.nz" target="_blank"></a>'
+    subdomains:'abcd',
+    attribution: '<a href="http://data.linz.govt.nz">Sourced from LINZ. CC-BY 3.0</a>'
 });
 var aerialphoto = L.tileLayer('http://tiles-a.data-cdn.linz.govt.nz/services;key=6cd48aeb0e094593b002f67ef2d58ff7/tiles/v4/set=2/EPSG:3857/{z}/{x}/{y}.png', {
     maxZoom: 19,
     minZoom: 13,
-    attribution: '<a href="http://www.linz.govt.nz" target="_blank"></a>'
+    subdomains:'abcd',
+    attribution: '<a href="http://www.linz.govt.nz/data/licensing-and-using-data/attributing-aerial-imagery-data">Sourced from LINZ. CC-BY 3.0</a>'
 });
 
 /* Overlay Layers */
@@ -256,7 +259,7 @@ onEachFeature: function (feature, layer) {
 
 var pesticideareas = L.geoJson(null, {
   style: function (feature) {
-    if (feature.properties.Op_ID === 88) {
+    if (feature.properties.Op_Name === "Te Urewera Mainland Island") {
       return {
         color: "#9a9a00",
         fillColor: "yellow",
@@ -267,10 +270,21 @@ var pesticideareas = L.geoJson(null, {
         dashArray: '4',
         };
       }
-    if (feature.properties.Op_ID === 85) {
+    if (feature.properties.Op_Name === "Waikareiti Islands") {
+      return {
+        color: "#9a9a00",
+        fillColor: "#990000",
+        fill: true,
+        fillOpacity: 0.5,
+        opacity: 0.7,
+        weight: 2,
+        dashArray: '4',
+        };
+      }  
+    if (feature.properties.Op_Name === "Whirinaki Te Pua-a-Tane Conservation Park") {
       return {
         color: "#9e1214",
-        fillColor: "#e31a1c",
+        fillColor: "#cc6600",
         fill: true,
         fillOpacity: 0.4,
         opacity: 0.7,
@@ -279,12 +293,6 @@ var pesticideareas = L.geoJson(null, {
         };
       }
     },
-    // TODO filter pesticide records to display only active operations
-/*filter: function(feature, layer) {
-  var unixtime = new Date();
-  unixtime.setDate(unixtime.getDate() + 0);
-  feature.properties.end_unixti >= unixtime;
-   },*/
 
 onEachFeature: function (feature, layer) {
     if (feature.properties) {
@@ -293,9 +301,7 @@ onEachFeature: function (feature, layer) {
                     "<tr><td>" + feature.properties.Pest1 + "</td><td>" + feature.properties.Bait1 + "</td><td>" + feature.properties.Meth1 + "</td><td>" + feature.properties.EndDate1 + "</td></tr>" +
                     "<tr><td>" + feature.properties.Pest2 + "</td><td>" + feature.properties.Bait2 + "</td><td>" + feature.properties.Meth2 + "</td><td>" + feature.properties.EndDate2 + "</td></tr>" +
                     "<tr><td>" + feature.properties.Pest3 + "</td><td>" + feature.properties.Bait3 + "</td><td>" + feature.properties.Meth3 + "</td><td>" + feature.properties.EndDate3 + "</td></tr>" +
-                    /*"<tr><th>Pesticide</th><td>" + feature.properties.Pest1 + "</td></tr>" + 
-                    "<tr><th>Pesticide</th><td>" + feature.properties.Pest2 +"</td></tr>" + 
-                    "<tr><th>Pesticide</th><td>" + feature.properties.Pest3 +"</td></tr>" + */
+                    
                     "<table>";
       layer.on({
         click: function (e) {
@@ -319,9 +325,9 @@ onEachFeature: function (feature, layer) {
         // layer.bindPopup(feature.properties.ptype, {'offset': new L.point(0, -20)})
         // .openPopup();
         layer.bringToFront();
-        /*if (!L.Browser.ie && !L.Browser.opera) {
-          layer.bringToFront();
-        }*/
+        // if (!L.Browser.ie && !L.Browser.opera) {
+        //   layer.bringToFront();
+        // }
       },
       mouseout: function (e) {
         pesticideareas.resetStyle(e.target);
@@ -338,7 +344,7 @@ $.getJSON("data/pestsumm.geojson", function (data) {
 
 var huntingareas = L.geoJson(null, {
   style: function (feature) {
-    if (feature.properties.hid === 2) {
+    if (feature.properties.block === "Open") {
       return {
         color: "#000000",
         fillColor: "#666633",
@@ -348,7 +354,7 @@ var huntingareas = L.geoJson(null, {
         weight: 2,
         };
       }
-    if (feature.properties.hid === 1) {
+    if (feature.properties.block === "Closed") {
       return {
         color: "#000000",
         fillColor: "#ff0033",
@@ -358,7 +364,57 @@ var huntingareas = L.geoJson(null, {
         weight: 2
         };
       }
-    if (feature.properties.hid === 4) {
+    if (feature.properties.block === "Closed, Waikaremoana Great Walk") {
+      return {
+        color: "#000000",
+        fillColor: "#333333",
+        fill: true,
+        fillOpacity: 0.5,
+        opacity: 0.5,
+        weight: 2
+        };
+      }
+    if (feature.properties.block === "Closed, Puketukutuku Kiwi Recovery Area") {
+      return {
+        color: "#000000",
+        fillColor: "#990099",
+        fill: true,
+        fillOpacity: 0.5,
+        opacity: 0.5,
+        weight: 2
+        };
+      }
+    if (feature.properties.block === "Closed, Whareama Kiwi Recovery Area") {
+      return {
+        color: "#000000",
+        fillColor: "#990099",
+        fill: true,
+        fillOpacity: 0.5,
+        opacity: 0.5,
+        weight: 2
+        };
+      }
+    if (feature.properties.block === "Closed, Northern Te Urewera Biodiversity Recovery Area") {
+      return {
+        color: "#000000",
+        fillColor: "#990099",
+        fill: true,
+        fillOpacity: 0.5,
+        opacity: 0.5,
+        weight: 2
+        };
+      }
+      if (feature.properties.block === "Closed, Waikareiti Biodiversity Recovery Area") {
+      return {
+        color: "#000000",
+        fillColor: "#990099",
+        fill: true,
+        fillOpacity: 0.5,
+        opacity: 0.5,
+        weight: 2
+        };
+      }               
+    if (feature.properties.block === "Open, no dogs at any time") {
       return {
         color: "#000000",
         fillColor: "#ffff11",
@@ -368,7 +424,7 @@ var huntingareas = L.geoJson(null, {
         weight: 2
         };
       }
-    if (feature.properties.hid === 5) {
+    if (feature.properties.block === "Open, Ruakituri Wilderness area, no helicopter access, no dogs at any time") {
       return {
         color: "#000000",
         fillColor: "#cccc33",
@@ -378,7 +434,7 @@ var huntingareas = L.geoJson(null, {
         weight: 2
         };
       }
-    if (feature.properties.hid === 3) {
+    if (feature.properties.block === "Open, 1 February to 21 December") {
       return {
         color: "#000000",
         fillColor: "#ffff99",
@@ -388,7 +444,7 @@ var huntingareas = L.geoJson(null, {
         weight: 2
         };
       }
-    if (feature.properties.hid === 6) {
+    if (feature.properties.block === "Private Tuhoe land") {
       return {
         color: "#000000",
         fillColor: "#990000",
@@ -398,7 +454,7 @@ var huntingareas = L.geoJson(null, {
         weight: 2
         };
       }
-    if (feature.properties.hid === 7) {
+    if (feature.properties.block === "border") {
       return {
         color: "#000000",
         fill: false,
@@ -432,9 +488,9 @@ onEachFeature: function (feature, layer) {
         /*layer.bindPopup(feature.properties.block, {'offset': new L.point(0, -20)})
         .openPopup();*/
         layer.bringToBack();
-        if (!L.Browser.ie && !L.Browser.opera && !L.Browser.webkit) {
-          layer.bringToFront();
-        }
+        // if (!L.Browser.ie && !L.Browser.opera && !L.Browser.webkit) {
+        //   layer.bringToFront();
+        // }
       },
       mouseout: function (e) {
         huntingareas.resetStyle(e.target);
@@ -621,26 +677,20 @@ $.getJSON("data/huts.geojson", function (data) {
   huts.addData(data);
 });
 
+var southWest = L.latLng(-38.99, 176.65),
+    northEast = L.latLng(-38.05, 177.82),
+    bounds = L.latLngBounds(southWest, northEast);
+
 map = L.map("map", {
-  zoom: 9,
+  zoom: 10,
   center: [-38.4901, 176.9046],
   layers: [mapboxStreets, huntingareas, markerClusters, highlight],
   zoomControl: false,
   attributionControl: false,
-  // fullscreenControl: true,
-  // fullscreenControlOptions: {
-  //   position: 'topleft'
-  // }
+  maxBounds: bounds,
 });
 
 L.control.zoomslider().addTo(map);
-
- //Initialize the StyleEditor
-/*var styleEditor = L.control.styleEditor({
-    position: 'topleft',
-}).addTo(map);*/
-    
-
 
 /* Layer control listeners that allow for a single markerClusters layer */
 map.on("overlayadd", function(e) {
@@ -712,10 +762,6 @@ attributionControl.onAdd = function (map) {
 };
 map.addControl(attributionControl);
 
-// var zoomControl = L.control.zoom({
-//   position: "bottomright"
-// }).addTo(map);
-
 var scaleControl = L.control.scale({
   metric: true,
 }).addTo(map);
@@ -781,7 +827,7 @@ $(document).one("ajaxStop", function () {
   $("#loading").hide();
   sizeLayerControl();
   /* Fit map to teureweras bounds */
-  map.fitBounds(huntingareas.getBounds());
+  map.fitBounds(bounds);
   featureList = new List("features", {valueNames: ["feature-name"]});
   featureList.sort("feature-name", {order:"asc"});
 
@@ -989,7 +1035,3 @@ if (!L.Browser.touch) {
 } else {
   L.DomEvent.disableClickPropagation(container);
 }
-
-/*map.on('styleeditor:changed', function(element){
-        console.log(element);
-    });*/

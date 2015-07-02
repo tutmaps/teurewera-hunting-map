@@ -15,6 +15,7 @@
 { "type": "Feature", "properties": { "NAME": "Rosie Bay Campsite", "status": "open", "booking": "not required" }, "geometry": { "type": "Point", "coordinates": [ 177.130368, -38.786025 ] } },
 { "type": "Feature", "properties": { "NAME": "Te Pakau (Eight Acre) Campsite", "status": "open", "booking": "not required" }, "geometry": { "type": "Point", "coordinates": [ 177.12079, -38.364116 ] } },
 { "type": "Feature", "properties": { "NAME": "Mokau Landing Campsite", "status": "open", "booking": "not required" }, "geometry": { "type": "Point", "coordinates": [ 177.08975, -38.732965 ] } },
-{ "type": "Feature", "properties": { "NAME": "Waiharuru Campsite", "status": "open", "booking": "required" }, "geometry": { "type": "Point", "coordinates": [ 177.03257, -38.744277 ] } }
+{ "type": "Feature", "properties": { "NAME": "Waiharuru Campsite", "status": "open", "booking": "required" }, "geometry": { "type": "Point", "coordinates": [ 177.03257, -38.744277 ] } },
+{ "type": "Feature", "properties": { "NAME": "Hopuruahine", "status": "informal", "booking": "not required" }, "geometry": { "type": "Point", "coordinates": [ 177.05611445, -38.72126762 ] } }
 ]
 }
