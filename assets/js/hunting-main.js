@@ -165,74 +165,14 @@ var highlightStyle = {
   radius: 10,
 };
 
-var possumblocks = L.geoJson(null, {
-  style: function (feature) {
-    if (feature.properties.Vacant === "No") {
-      return {
-        color: "#505050",
-        fillColor: "#ff00cc",
-        fill: true,
-        fillOpacity: 0.4,
-        opacity: 0.8,
-        weight: 2,
-        };
-      }
-    if (feature.properties.Vacant === "Yes") {
-      return {
-        color: "#505050",
-        fillColor: "#cc6600",
-        fill: true,
-        fillOpacity: 0.2,
-        opacity: 0.8,
-        weight: 2,
-        };
-      }
-    },
-
-onEachFeature: function (feature, layer) {
-    if (feature.properties) {
-      var content = "<table class='table table-responsive table-striped table-bordered table-condensed'>" + 
-                    "<thead><tr><th>Block Number</th><th>Locality</th><th>Vacant</th></tr></thead>" +
-                    "<tr><td>" + feature.properties.Block_id + "</td><td>" + feature.properties.Locality + "</td><td>" + feature.properties.Vacant + "</td><td>" +
-                    "<table>";
-      layer.on({
-        click: function (e) {
-          $("#feature-title").html("Possum Permit Block");
-          $("#feature-info").html(content);
-          $("#featureModal").modal("show");
-
-        }
-      });
-    }
-
-    layer.on({
-      mouseover: function (e) {
-        var layer = e.target;
-        layer.setStyle({
-          weight: 3,
-          color: "#fff000",
-          dashArray: '',
-          opacity: 1
-        });
-        // layer.bindPopup(feature.properties.ptype, {'offset': new L.point(0, -20)})
-        // .openPopup();
-        layer.bringToFront();
-        /*if (!L.Browser.ie && !L.Browser.opera) {
-          layer.bringToFront();
-        }*/
-      },
-      mouseout: function (e) {
-        possumblocks.resetStyle(e.target);
-        /*layer.bindPopup(feature.properties.ptype, {'offset': new L.point(0, -20)})
-        .closePopup(layer);*/
-      }
-    });
-  }
-});
-
-  $.getJSON("data/possumblk.geojson", function (data) {
-  possumblocks.addData(data);
-});
+/*var doctracks = L.tileLayer.wms("http://geoportal.doc.govt.nz/arcgis/services/GeoportalServices/DOC_Tracks/MapServer/WMSServer", {
+  format: 'image/png',
+  transparent: true,
+  version: '1.3.0',
+  layers: 0,
+  maxZoom: 20,
+  minZoom: 9
+});*/
 
 var pesticidebuffers = L.geoJson(null, {
   style: function (feature) {
@@ -852,15 +792,12 @@ var groupedOverlays = {
     "<img src='assets/img/hut16.png' width='16' height='18'>&nbsp;Huts": hutLayer
   },
 
-  "Hunting layers": {
-    "Public Hunting status": huntingareas,
-    "Possum Permit Blocks": possumblocks,
-  },
-// };
-
-  "Pesticide layers": {
-    "Pesticide areas": pesticideareas,
-    "Pesticide buffer zones": pesticidebuffers,
+  "Reference layers": {
+    "Pesticides": pesticideareas,
+    "Pesticide buffers": pesticidebuffers,
+    "Hunting status": huntingareas,
+    // "Hunting status<br><img src='assets/img/hunt.png' width='90' height='90'>&nbsp": huntingareas,
+    // "Tracks": doctracks,
   }
 };
 
