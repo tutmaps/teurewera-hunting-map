@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Korokoro Campsite", "status": "open", "booking": "required" }, "geometry": { "type": "Point", "coordinates": [ 176.986526, -38.793713 ] } },
+{ "type": "Feature", "properties": { "name": "Maraunui Campsite", "status": "open", "booking": "required" }, "geometry": { "type": "Point", "coordinates": [ 176.987992, -38.768624 ] } },
+{ "type": "Feature", "properties": { "name": "Waiopaoa Campsite", "status": "open", "booking": "required" }, "geometry": { "type": "Point", "coordinates": [ 176.993564, -38.808989 ] } },
+{ "type": "Feature", "properties": { "name": "Tapuaenui Campsite", "status": "open", "booking": "required" }, "geometry": { "type": "Point", "coordinates": [ 177.051545, -38.735919 ] } },
+{ "type": "Feature", "properties": { "name": "Waikaremoana Holiday Park", "status": "open", "booking": "not required" }, "geometry": { "type": "Point", "coordinates": [ 177.155597, -38.753444 ] } },
+{ "type": "Feature", "properties": { "name": "Mimiha Campsite", "status": "open", "booking": "not required" }, "geometry": { "type": "Point", "coordinates": [ 176.918936, -38.648096 ] } },
+{ "type": "Feature", "properties": { "name": "Omahuru Campsite (Ogilvies)", "status": "open", "booking": "not required" }, "geometry": { "type": "Point", "coordinates": [ 177.120621, -38.31286 ] } },
+{ "type": "Feature", "properties": { "name": "Te Taita O Makoro Campsite", "status": "open", "booking": "not required" }, "geometry": { "type": "Point", "coordinates": [ 177.056446, -38.682536 ] } },
+{ "type": "Feature", "properties": { "name": "Orangihikoia Campsite", "status": "open", "booking": "not required" }, "geometry": { "type": "Point", "coordinates": [ 177.040678, -38.668006 ] } },
+{ "type": "Feature", "properties": { "name": "Rosie Bay Campsite", "status": "open", "booking": "not required" }, "geometry": { "type": "Point", "coordinates": [ 177.130368, -38.786025 ] } },
+{ "type": "Feature", "properties": { "name": "Te Pakau (Eight Acre) Campsite", "status": "open", "booking": "not required" }, "geometry": { "type": "Point", "coordinates": [ 177.12079, -38.364116 ] } },
+{ "type": "Feature", "properties": { "name": "Mokau Landing Campsite", "status": "open", "booking": "not required" }, "geometry": { "type": "Point", "coordinates": [ 177.08975, -38.732965 ] } },
+{ "type": "Feature", "properties": { "name": "Waiharuru Campsite", "status": "open", "booking": "required" }, "geometry": { "type": "Point", "coordinates": [ 177.03257, -38.744277 ] } },
+{ "type": "Feature", "properties": { "name": "Hopuruahine", "status": "informal", "booking": "not required" }, "geometry": { "type": "Point", "coordinates": [ 177.056114, -38.721268 ] } }
+]
+}
